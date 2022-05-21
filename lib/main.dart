@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_awesome_uis/fade_and_bounce_tooltip/fade_and_bounce_tooltip.dart';
+import 'package:flutter_my_awesome_uis/scroll_to_item_in_list_after_redirection/scroll_to_item_in_list_after_redirection.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
-final _uis = [const FadeAndBounceTooltipView()];
+final _uis = [
+  const FadeAndBounceTooltipView(),
+  const ScrollToItemInListAfterRedirectionView()
+];
 
 class UIList extends StatelessWidget {
   const UIList({Key? key}) : super(key: key);
